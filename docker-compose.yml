@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  testadmin:
+    image: ${DOCKER_REGISTRY-}testadmin
+    build:
+      context: .
+      dockerfile: TestAdmin/Dockerfile
+   ports:
+    -"8834:80"
+services:
+  testadmin:
+    image: ${DOCKER_REGISTRY-}testweb
+    build:
+      context: .
+      dockerfile: TestWeb/Dockerfile
+       ports:
+    -"8835:80"
