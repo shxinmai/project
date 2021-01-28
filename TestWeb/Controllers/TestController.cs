@@ -26,6 +26,7 @@ namespace TestWeb.Controllers
         [HttpGet("test")]
         public string Get([FromQuery] string key)
         {
+            _logger.LogWarning("dddd");
             return key;
         }
 
