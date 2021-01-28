@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>5fe0f3e2-7e5b-44dd-8355-2882048a380b</ProjectGuid>
+    <ProjectGuid>87b7bda0-eb2b-41c7-85b3-e4ed71aa51b4</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
     <DockerServiceName>testadmin</DockerServiceName>
