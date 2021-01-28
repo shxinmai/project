@@ -28,5 +28,11 @@ namespace TestWeb.Controllers
         {
             return key;
         }
+
+        [HttpGet("jenkins")]
+        public string Jenkins([FromQuery] string key)
+        {
+            return key;
+        }
     }
 }
