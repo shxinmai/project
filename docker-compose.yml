@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  testweb:
+    image: ${DOCKER_REGISTRY-}testweb
+    build:
+      context: .
+      dockerfile: TestWeb/Dockerfile
+
+  testadmin:
+    image: ${DOCKER_REGISTRY-}testadmin
+    build:
+      context: .
+      dockerfile: TestAdmin/Dockerfile
+
