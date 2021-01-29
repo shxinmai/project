@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>87b7bda0-eb2b-41c7-85b3-e4ed71aa51b4</ProjectGuid>
+    <ProjectGuid>d253fe9c-a7e3-490d-b2d4-06ee848e5992</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>testadmin</DockerServiceName>
+    <DockerServiceName>testweb</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
