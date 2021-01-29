@@ -4,12 +4,12 @@ services:
   testweb:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "80"
+    #ports:
+    #  - "80"
 
   testadmin:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "80"
+    #ports:
+    #  - "80"
 
