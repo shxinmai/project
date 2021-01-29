@@ -1,8 +1,23 @@
 version: '3.4'
 
 services:
+  testweb:
+    image: ${DOCKER_REGISTRY-}testweb   
+    build:  
+      context: .  
+      dockerfile: TestWeb/Dockerfile  
+    ports:  
+    - 8044:80 
+    container_name: netcore_testweb   
+    user: root
+    restart: always
   testadmin:
-    image: ${DOCKER_REGISTRY-}testadmin
-    build:
-      context: .
-      dockerfile: TestAdmin/Dockerfile
+    image: ${DOCKER_REGISTRY-}testadmin  
+    build:  
+      context: . 
+      dockerfile: TestAdmin/Dockerfile 
+    ports:  
+    - 8045:80 
+    container_name: netcore_testadmin 
+    user: root
+    restart: always
