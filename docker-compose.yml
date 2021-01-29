@@ -6,10 +6,12 @@ services:
     build:
       context: .
       dockerfile: TestWeb/Dockerfile
-    ports: -"8044:80"
+    ports: 
+    - 8044:80 
   testadmin:
     image: ${DOCKER_REGISTRY-}testadmin
     build:
       context: .
       dockerfile: TestAdmin/Dockerfile
-    ports: -"8045:80"
+    ports:  
+    - 8045:80 
