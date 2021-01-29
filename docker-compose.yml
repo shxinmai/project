@@ -2,35 +2,29 @@ version: '3.4'
 
 services:
   testweb:
-    image: ${DOCKER_REGISTRY-}testweb  #镜像名称
-    build: #镜像构建
-      context: . #工作目录
-      dockerfile: TestWeb/Dockerfile #Dockerfile位置
-    ports: #端口映射
+    image: ${DOCKER_REGISTRY-}testweb   
+    build:  
+      context: .  
+      dockerfile: TestWeb/Dockerfile  
+    ports:  
     - 8044:80 
-    container_name: netcore_testweb #容器名
+    container_name: netcore_testweb  
     deploy:
-      restart_policy: #重启策略
+      restart_policy:  
         condition: on-failure
         delay: 5s
-        max_attempts: 3
-    #networks: #指定network
-    #  - default
-    #  - newbridge
+        max_attempts: 3 
   testadmin:
-    image: ${DOCKER_REGISTRY-}testadmin #镜像名称
-    build: #镜像构建
-      context: . #工作目录
-      dockerfile: TestAdmin/Dockerfile #Dockerfile位置
-    ports:  #端口映射
+    image: ${DOCKER_REGISTRY-}testadmin  
+    build:  
+      context: . 
+      dockerfile: TestAdmin/Dockerfile 
+    ports:  
     - 8045:80 
-    container_name: netcore_testadmin #容器名
+    container_name: netcore_testadmin 
     deploy:
-      restart_policy: #重启策略
+      restart_policy: 
         condition: on-failure
         delay: 5s
         max_attempts: 3
-    #networks: #指定network
-    #  - default
-    #  - newbridge
  
