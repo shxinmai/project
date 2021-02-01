@@ -9,8 +9,7 @@ services:
     ports:  
     - 8044:80 
     container_name: netcore_testweb   
-    user: root
-    restart: always
+    user: root 
   testadmin:
     image: ${DOCKER_REGISTRY-}testadmin  
     build:  
@@ -19,5 +18,4 @@ services:
     ports:  
     - 8045:80 
     container_name: netcore_testadmin 
-    user: root
-    restart: always
+    user: root 
