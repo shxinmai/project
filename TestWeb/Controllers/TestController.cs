@@ -36,5 +36,11 @@ namespace TestWeb.Controllers
         {
             return key;
         }
+
+        [HttpGet("abc")]
+        public string Abc([FromQuery] string key)
+        {
+            return key;
+        }
     }
 }
