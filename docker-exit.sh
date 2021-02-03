@@ -1,5 +1,5 @@
  
-docker ps | grep netcore_testweb &> /dev/null 
+docker ps |£¨grep netcore_testweb | grep netcore_testadmin£© &> /dev/null 
 if [ $? -ne 0 ]
 then
     echo "core is not up,we will start up it!!!"
